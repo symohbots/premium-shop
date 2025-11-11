@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYMOH Premium Shop | Premium Tech Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="premium-style.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="floating-elements" id="floatingElements"></div>
+
+    <!-- WhatsApp Bot Offer Popup -->
+    <div class="offer-popup" id="offerPopup">
+        <div class="offer-content">
+            <div class="offer-badge">PREMIUM DEAL!</div>
+            <h2 class="offer-title">WhatsApp Bot Premium Offer!</h2>
+            <p class="offer-description">Get our premium WhatsApp Business Bot at an incredible discount. Limited time premium offer!</p>
+            <div class="offer-price">KSh 100 ONLY</div>
+            <div class="offer-timer">
+                <div class="timer-title">Premium offer expires in:</div>
+                <div class="timer-display" id="offerTimer">02:00:00</div>
+            </div>
+            <button class="offer-btn" id="offerOrderBtn">Grab This Premium Deal!</button>
+            <button class="close-offer" id="closeOffer">No thanks, I'll pay full price later</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="profile-pic">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h1 class="site-title">SYMOH Premium Shop</h1>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="overlay-menu" id="overlayMenu">
+        <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <h2>Premium Menu</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Premium Home</a></li>
+            <li><a href="#products"><i class="fas fa-shopping-bag"></i> Premium Products</a></li>
+            <li><a href="#faq"><i class="fas fa-question-circle"></i> Premium Support</a></li>
+            <li><a href="#testimonials"><i class="fas fa-star"></i> Client Reviews</a></li>
+            <li><a href="wa.me/254788729180" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Contact Admin</a></li>
+            <li><a href="/index.html"><i class="fas fa-external-link-alt"></i> Back to Main</a></li>
+            <li><a href="https://wa.me/254788729180"><i class="fab fa-whatsapp"></i> Join Premium</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Digital Solutions</h1>
+            <p>Exclusive high-quality WhatsApp bots, VPNs, VPS, Netflix accounts, and development classes. All premium services backed by 24/7 support.</p>
+            <button class="cta-button">Explore Premium Products</button>
+        </div>
+    </section>
+
+    <!-- Special Offers Banner -->
+    <div class="offers-banner">
+        <h3>🔥 PREMIUM OFFER: WhatsApp Bot for only KSh 100! Limited time! 🔥</h3>
+        <p>Automate your business communications at an incredible price. Premium offer expires in <span id="bannerTimer">02:00:00</span></p>
+    </div>
+
+    <!-- Premium Statistics Section -->
+    <section class="stats">
+        <div class="stat-card">
+            <div class="stat-number">1000+</div>
+            <div class="stat-text">Premium Customers</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-text">Premium Products</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-text">Premium Support</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">99%</div>
+            <div class="stat-text">Satisfaction Rate</div>
+        </div>
+    </section>
+
+    <!-- Premium Products Section -->
+    <section class="products" id="products">
+        <h2 class="section-title">Our Premium Products</h2>
+
+        <!-- Premium Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search premium products..." id="searchInput">
+            <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Premium Categories Filter -->
+        <div class="categories">
+            <button class="category-btn active" data-category="all">All Premium</button>
+            <button class="category-btn" data-category="software">Premium Software</button>
+            <button class="category-btn" data-category="services">Premium Services</button>
+            <button class="category-btn" data-category="accounts">Premium Accounts</button>
+            <button class="category-btn" data-category="education">Premium Education</button>
+        </div>
+
+        <div class="products-grid">
+            <!-- WhatsApp Bots -->
+            <div class="product-card" data-category="software">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                    <div class="premium-badge">PREMIUM</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Premium WhatsApp Bots</h3>
+                    <p class="product-description">Advanced automation for your WhatsApp business. Handle customer queries, send automated replies, and more with premium features.</p>
+                    <div class="product-price">From KSh 500</div>
+                    <button class="select-btn" data-product="WhatsApp Bot">Select Premium Options</button>
+                </div>
+            </div>
+
+            <!-- VPN Services -->
+            <div class="product-card" data-category="services">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                    <div class="premium-badge">PREMIUM</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Premium VPN Services</h3>
+                    <p class="product-description">Ultra-secure internet connection with premium servers. Access geo-restricted content with high-speed connections.</p>
+                    <div class="product-price">From KSh 300</div>
+                    <button class="select-btn" data-product="VPN Service">Select Premium Options</button>
+                </div>
+            </div>
+
+            <!-- VPS Hosting -->
+            <div class="product-card" data-category="services">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                    <div class="premium-badge">PREMIUM</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Premium VPS Hosting</h3>
+                    <p class="product-description">High-performance Virtual Private Servers with premium support. Maximum reliability and speed guaranteed.</p>
+                    <div class="product-price">From KSh 1,200</div>
+                    <button class="select-btn" data-product="VPS Hosting">Select Premium Options</button>
+                </div>
+            </div>
+
+            <!-- Netflix Accounts -->
+            <div class="product-card" data-category="accounts">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                    <div class="premium-badge">PREMIUM</div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Premium Netflix Accounts</h3>
+                    <p class="product-description">Exclusive premium Netflix accounts with 1 to 12 months validity. 4K Ultra HD streaming with multiple screens.</p>
+                    <div class="product-price">From KSh 150</div>
+                    <button class="select-btn" data-product="Netflix Account">Select Premium Options</button>
+                </div>
+            </div>
+
+            <!-- Additional Premium Products... -->
+        </div>
+    </section>
+
+    <!-- Premium Newsletter Section -->
+    <section class="newsletter">
+        <h3>Join Our Premium Newsletter</h3>
+        <p>Get exclusive access to premium offers, early product releases, and expert tech tips.</p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email for premium updates" required>
+            <button type="submit" class="newsletter-btn">Join Premium</button>
+        </form>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <!-- Step 1: Product Options -->
+            <div id="step1">
+                <h3 class="modal-title" id="modalProductTitle">Premium Product Options</h3>
+                <div class="price-options" id="priceOptions">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+                <button class="order-btn" id="orderBtn">Order Premium Now</button>
+            </div>
+            
+            <!-- Step 2: Contact Method Selection -->
+            <div id="step2" style="display: none;">
+                <h3 class="modal-title">Choose Premium Contact Method</h3>
+                <p>Select how you'd like to contact us for premium service:</p>
+                
+                <div class="contact-method">
+                    <button class="contact-btn telegram-btn" id="telegramBtn">
+                        <i class="fab fa-telegram"></i>
+                        <div>
+                            <strong>Premium Telegram</strong>
+                            <div class="contact-description">Fast premium support</div>
+                        </div>
+                    </button>
+                    
+                    <button class="contact-btn whatsapp-btn" id="whatsappBtn">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>Premium WhatsApp</strong>
+                            <div class="contact-description">Instant premium service</div>
+                        </div>
+                    </button>
+                </div>
+                
+                <div class="contact-message error-message" id="whatsappMessage">
+                    Currently we don't work with WhatsApp. Please choose another method.
+                </div>
+                
+                <div class="contact-message success-message" id="telegramMessage">
+                    Redirecting to Telegram for premium service...
+                </div>
+                
+                <button class="back-btn" id="backToOptions">
+                    <i class="fas fa-arrow-left"></i> Back to Premium Options
+                </button>
+            </div>
+            
+            <!-- Step 3: Premium Loading Screen -->
+            <div class="loading-container" id="loadingStep" style="display: none;">
+                <div class="loading-spinner"></div>
+                <div class="loading-text">Preparing your premium order...</div>
+                <div class="loading-countdown" id="loadingCountdown">15</div>
+                <p>Please wait while we redirect you to premium support</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium FAQ Section -->
+    <section class="faq-section" id="faq">
+        <h2 class="section-title">Premium Support FAQ</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do I access premium support?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Premium customers get 24/7 support via Telegram. Select any product and choose Telegram for immediate assistance.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What makes your products premium?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Our premium products include extended features, longer warranties, priority support, and exclusive updates not available in standard versions.
+                </div>
+            </div>
+            <!-- More premium FAQ items... -->
+        </div>
+    </section>
+
+    <!-- Premium Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">Premium Client Reviews</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"The premium WhatsApp bot transformed my business completely. The advanced features and 24/7 support are worth every shilling!"</p>
+                <p class="testimonial-author">- Sarah K., Nairobi</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Premium Netflix account working flawlessly for 8 months now. The 4K quality and multiple screens are incredible value."</p>
+                <p class="testimonial-author">- Mike T., Mombasa</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"The premium web development classes took my skills to the next level. The personal mentorship made all the difference!"</p>
+                <p class="testimonial-author">- James W., Kisumu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer>
+        <p>SYMOH Premium Shop &copy; 2024 - Exclusive Digital Solutions Provider</p>
+        <p class="creator">Created by <span>Tech symoh</span> with <span class="heart">❤️</span> for premium clients</p>
+    </footer>
+
+    <!-- Premium Live Support Button -->
+    <button class="live-support" id="liveSupport">
+        <i class="fas fa-crown"></i>
+    </button>
+
+    <script src="premium-script.js"></script>
+</body>
+</html>
